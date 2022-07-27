@@ -13,8 +13,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-// Base prototype
-var Shape = /** @class */ (function () {
+var Shape = (function () {
     function Shape(source) {
         this.x = source.x;
         this.y = source.y;
@@ -22,8 +21,7 @@ var Shape = /** @class */ (function () {
     }
     return Shape;
 }());
-// Exmaple of concrete proptotype
-var Rectangle = /** @class */ (function (_super) {
+var Rectangle = (function (_super) {
     __extends(Rectangle, _super);
     function Rectangle(source) {
         var _this = _super.call(this, source) || this;
@@ -36,8 +34,7 @@ var Rectangle = /** @class */ (function (_super) {
     };
     return Rectangle;
 }(Shape));
-// Another prototype example but now with cars
-var Car = /** @class */ (function () {
+var Car = (function () {
     function Car(source) {
         this.doors = source.doors;
         this.engine = source.engine;
@@ -45,8 +42,7 @@ var Car = /** @class */ (function () {
     }
     return Car;
 }());
-// Another concrete prototype example
-var Civic = /** @class */ (function (_super) {
+var Civic = (function (_super) {
     __extends(Civic, _super);
     function Civic(source) {
         var _this = _super.call(this, source) || this;
@@ -62,3 +58,4 @@ var civic = new Civic({ autopilot: false, color: 'black', doors: 4, engine: 'V6'
 console.log('civic', civic);
 var clonedCivic = civic.clone();
 console.log('cloned', clonedCivic);
+//# sourceMappingURL=proptotype-pattern.js.map
