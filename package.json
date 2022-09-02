@@ -1,0 +1,30 @@
+{
+  "name": "ts-design-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaxg/ts-design-patterns.git"
+  },
+  "keywords": [
+    "ts",
+    "design-patterns",
+    "typescript"
+  ],
+  "author": "maaxg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maaxg/ts-design-patterns/issues"
+  },
+  "homepage": "https://github.com/maaxg/ts-design-patterns#readme",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

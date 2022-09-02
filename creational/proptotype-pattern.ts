@@ -1,5 +1,5 @@
 // Base prototype
-abstract class Shape {
+export abstract class Shape {
   x: number
   y: number
   color: string
@@ -14,7 +14,7 @@ abstract class Shape {
 }
 
 // Exmaple of concrete proptotype
-class Rectangle extends Shape {
+export class Rectangle extends Shape {
   width: number
   height: number
   constructor(source: Rectangle){
@@ -29,7 +29,7 @@ class Rectangle extends Shape {
 }
 
 // Another prototype example but now with cars
-abstract class Car {
+export abstract class Car {
   doors: number
   engine: string
   color: string
@@ -42,7 +42,7 @@ abstract class Car {
   abstract clone(): Car
 }
 // Another concrete prototype example
-class Civic extends Car {
+export class Civic extends Car {
   autopilot: boolean
   constructor(source: Omit<Civic, 'clone'>){
     super(source)
