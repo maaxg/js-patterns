@@ -1,1 +1,1 @@
-# js-patterns
+# ts-design-patterns
